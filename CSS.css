@@ -1,0 +1,19 @@
+/* element selector */
+p{
+    border: 5px solid rgb(24, 27, 201);
+}
+/* id seletor */
+.redelement{
+    color: red;
+}
+.redelement{
+    background-color: black;
+}
+/* class selector */
+#firstheading{
+    color:greenyellow; background-color: brown;
+}
+/* group selector */
+footer, div{
+    background-color: aqua;
+}

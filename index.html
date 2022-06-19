@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snream art gallary</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url("picture/cat.jpg"),
+                              url("picture/ironman.jpg");
+                              background-repeat: no-repeat;
+                background-size: 900px 1200px;
+                background-position: 0px 0px, 900px 0px;
+                height: 1200px;
+                color: rgb(143, 36, 36);
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px  solid rgb(9, 80, 36); */
+            position: absolute;
+            font-weight: bold;
+            left: 20px;
+            top: 20px;
+        }
+        .left img{
+            width:168px;
+            line-height: 1px;
+
+        }
+        .left div{
+            line-height: 7px;
+            font-size: 25px;
+            color: rgb(7, 7, 7);
+        }
+       
+        .middle{
+            display: block;
+            /* border: 2px  solid rgb(9, 80, 36); */
+            width: 45%;
+            margin: 20px auto;
+        }
+       
+       
+       .navbar li{
+           display: inline-block;
+       }
+       .navbar li a {
+           color: rgb(77, 20, 20);
+           text-decoration: none;
+           padding: 20px 20px;
+           font-size: 25px;
+           font-weight: bold;
+
+       }
+       .navbar li a:hover{
+           color: rgb(158, 45, 45);
+           text-decoration: underline;
+           font-size: 27px;
+           
+       }
+        
+        .right{
+            display: inline-block;
+            /* border: 2px  solid rgb(9, 80, 36); */
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .btn{
+            margin: 0px 15px;
+            padding: 8px 20px;
+            color: rgb(7, 7, 7);
+            background-color: rgb(228, 228, 228);
+            border-radius:15px ;
+            font-size: 15px;
+            border: 3px solid black;
+            cursor: pointer;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        }
+        .btn:hover{
+            background-color: rgb(179, 175, 175);
+            font-size: 25px;
+        }
+        .order{
+            border: 2px solid white;
+            margin: 106px 500px;
+            padding : 75px;
+            width: 33%;
+            border-radius: 20px;
+        }
+        .order h1{
+            font-size: 70px;
+            color: white;
+        }
+        .form input{
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            padding : 3px;
+            width: 500px;
+            border-radius: 10px;
+            margin: 8px;
+        }
+      .order button{
+          display : block;
+          width: 500px;
+          text-align: center;
+          padding : 5px;
+          font-size:25px ;
+      }
+        /* .order{
+            color : white;
+            position: absolute;
+            font-size: 50px;
+            margin-top: 150px;
+            padding: 3px 3px;
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+        input {
+    font-size: x-large;
+}
+        select{
+            font-size: xx-large;
+        }
+         .packing{
+            font-size: 30px;
+        }
+      */
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="picture/sn.jpg" alt="">
+            <br>
+            <div>SNREAM ART </div>
+            
+
+        </div>
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href ="2nd.html" target="_blank">Home</a></li>
+                <li><a href ="3rd.html">About Us</a></li>
+                <li><a href ="5th.html">Pricing</a></li>
+                <li><a href ="4th.html">Animation</a></li>
+                <li><a href ="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Search</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </header>
+    
+        <!-- <div class="order">
+            For Place Your order
+            <br>
+            <input  tpye="text"  placeholder="Your Name">
+            <br>
+            <input tpye="text" placeholder="Address">
+            <br>
+            <div2 class="packing">
+                your needs in sketch<br>
+                <input type="checkbox" >Fixative<br>
+                <input type="checkbox" >Farme<br>
+                <input type="checkbox" >Border<br> 
+            </div2>
+            <select name="Meduim">
+                <option value="Graphit">Graphite</option>
+                <option value="Charcol">Charcol</option>
+                <option value="Cyon">Cyon</option>
+                <option value="Wood">Wood</option>
+                <option value="Pen">Pen</option>
+            </select>
+            <br>
+            <input type="submit" value="submit">
+        </div> -->
+        <div class="order">
+            <h1> Place Your Order</h1>
+            <form action="action.php">
+                <div class="form">
+                    <input type="text" name="#" placeholder="Enter your name"><br>
+                    <input type="text" name="#" placeholder="Address"><br>
+                    <input type="text" name="#" placeholder="Meduim"><br>
+                    <input type="text" name="#" placeholder="sketch size"><br>
+                    <button class="btn">submit</button>
+                </div>
+            </form>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idea of flexbox</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(250, 246, 246);
+            color: rgb(12, 12, 12);
+            
+        }
+        header::before{
+           content: "";
+           background: url("picture/Desert.jpg") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 23px;
+            margin: 15px;
+
+        }
+        .navbar ul li{
+            padding: 3px;
+            margin: 3px;
+            font-size: 20px;
+            width: 7%;
+
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        section {
+            display: flex;
+            height: 500px;
+            margin: 3px 23px;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid yellowgreen;
+            justify-content: center;    
+            
+        }
+        /* section::after{
+            content:"this is the last line"
+            
+        } */
+        h3{
+            font-size: 60px;
+        }
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+        /* section::after{
+            font-size: 30px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3> Thanks for visiting pricing page</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corporis reiciendis dolorum ducimus accusamus sit illum, alias ad quos eaque, nam cum, inventore provident laboriosam blanditiis quod optio? Ex, sunt!</p>
+        </section>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        .box{
+            font-size: 75px;
+            text-align: center;
+            background-color: red;
+            color: aliceblue;            
+            display: none;
+
+        }
+        @media (max-width:320px){
+            #box1{
+                display: block;
+                border: 5px solid red;
+                border-radius: 10px;
+                color: yellowgreen;
+                background-color: black;
+            }
+        }
+        @media (min-width:321px) and (max-width:540px){
+            #box2{
+                display: block;
+                border: 5px solid red;
+                border-radius: 10px;
+                color: rgb(15, 15, 15);
+                background-color: rgb(206, 209, 25);
+            }
+            
+        }
+        @media (min-width:541px) and (max-width:820px){
+            #box3{
+                display: block;
+                border: 5px solid red;
+                border-radius: 10px;
+                color: rgb(233, 176, 176);
+                background-color: rgb(10, 61, 23);
+            }
+            
+        }
+        @media (min-width:821px) and (max-width:2000px){
+            #box4{
+                display: block;
+                border: 5px solid red;
+                border-radius: 10px;
+                color: rgb(200, 175, 241);
+                background-color: rgb(8, 9, 77);
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <div class="box" id="box1">This is a I Phone</div>
+        <div class="box" id="box2"> This is a Dual screen phone</div>
+        <div class="box" id="box3">This is a Tablet</div>
+        <div class="box" id="box4">This is a Computer</div>
+    </header>
+</body>
+</html>
